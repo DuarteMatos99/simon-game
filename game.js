@@ -18,7 +18,7 @@ $(document).keypress(function (event) {
 // When a button is pressed will validate
 $(".btn").click(function (event) {
     const userClick = event.target.innerText;
-    $(".btn").addClass("pressed");
+    $(this).addClass("pressed");
     setTimeout(function () {
         $(".btn").removeClass("pressed");
     }, 200);
